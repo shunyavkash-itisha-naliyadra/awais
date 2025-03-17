@@ -27,6 +27,7 @@ npx awais-tool [options] <command>
 - **-m, --minimal**: Prints minimal information.
 - **-d, --debug**: -d, --debug
 - **-v, --version**: Prints the CLI version.
+- **-p, --post**: Prints the CLI version.
 
 ## Example Commands
 

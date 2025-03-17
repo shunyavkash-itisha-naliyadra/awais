@@ -1,5 +1,5 @@
 import meow from "meow";
-import chalk from "chalk";
+import chalk from "./chalk.js";
 let helperText = `
                     Usage
                       ${chalk.green(`npx awais`)} ${chalk.yellow(`[--option]`)} ${chalk.cyan(`<command>`)}
@@ -15,6 +15,7 @@ let helperText = `
                       ${chalk.yellow(`-m`)}, ${chalk.yellow(`--minimal`)}               Print minimal info 
                       ${chalk.yellow(`-d`)}, ${chalk.yellow(`--debug`)}                 Print debug info 
                       ${chalk.yellow(`-v`)}, ${chalk.yellow(`--version`)}               Print CLI version
+                      ${chalk.yellow(`-p`)}, ${chalk.yellow(`--post`)}                  Print lat 10 post
                     
                     Command
                      ${chalk.cyan(`help`)}        Print CLI information
@@ -58,6 +59,11 @@ let options = {
       type: "boolean",
       default: false,
       shortFlag: "v",
+    },
+    post: {
+      type: "boolean",
+      default: false,
+      shortFlag: "p",
     },
   },
 };

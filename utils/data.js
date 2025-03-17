@@ -1,4 +1,4 @@
-import chalk from "chalk";
+import chalk from "./chalk.js";
 import sym from "log-symbols";
 // use chalk color full cli
 const blueText = chalk.hex("#0000FF");
@@ -6,7 +6,7 @@ const greenText = chalk.hex("#00FF00");
 const twitterBlue = chalk.hex("#1DA1F2").bold;
 const grayText = chalk.gray;
 // inverse bgcolore
-const success = chalk.hex("#0abf53");
+const success = chalk.hex("#0abf53").inverse;
 const warning = chalk.hex("#FFA500");
 const info = chalk.hex("#037ef3");
 const error = chalk.hex("#ff0000");
@@ -34,6 +34,8 @@ let errorInfo = `
 
      ${sym.error} ${error("ERROR: Internal server error!")}
 `;
-let msg = `Check NodeCli`;
 
-export { social, title, bio, errorInfo, msg };
+let msg = `Check NodeCli`;
+let data = `View last 10 posts !`;
+
+export { social, title, bio, errorInfo, msg, data };
