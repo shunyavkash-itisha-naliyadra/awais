@@ -1,4 +1,4 @@
-import meow from "meow";
+import meow from "./meow/index.js";
 import chalk from "./chalk.js";
 let helperText = `
                     Usage
